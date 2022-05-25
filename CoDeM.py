@@ -124,7 +124,7 @@ def preprocess(args):
 def main():
     parser=argparse.ArgumentParser(prog='CoDeM.py')
     parser=argparse.ArgumentParser(description="Identify contaminated genomic reads")
-    parser.add_argument("-choice_wordvector",dest="type_vector_num",help="select the kind of word vector (1=Global vector,2:continuous-bag-of-words,3: Skip-gram model, 4:FastText)",required=True,type=int, \
+    parser.add_argument("wv",dest="type_vector_num",help="select the kind of word vector (1=Global vector,2:continuous-bag-of-words,3: Skip-gram model, 4:FastText)",required=True,type=int, \
          choices=range(1,5))
     parser.add_argument("-in",help="fasta input file must be fasta or text",dest="input",required=True,type=str)
 
