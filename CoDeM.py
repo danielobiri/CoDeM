@@ -1,59 +1,28 @@
 #!/usr/bin/env python3
 
 
-from sklearn.metrics import precision_score
-from sklearn.metrics import recall_score
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import f1_score
-from sklearn.metrics import classification_report
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import auc
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
-from collections import defaultdict
+
+
 from Bio import SeqIO
-from nltk import bigrams
-#import gensim, logging
-import numpy as np
 from nltk import trigrams
-#from bert import tokenization
 import tensorflow as tf
 from tensorflow import keras
-import matplotlib.pyplot as plt
-#from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
-import numpy as np
-from sklearn.metrics import precision_score
-from sklearn.metrics import recall_score
-from sklearn.metrics import f1_score
-from sklearn.metrics import classification_report
-from sklearn.metrics import matthews_corrcoef
 import pickle5 as pickle
-#from stable_baselines3 import PPO
 import tensorflow.keras
-
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import pickle
 import random
 random.seed(12345)
 import os
 os.environ['PYTHONHASHSEED']='0'
-seed=42
-np.random.seed(seed)
-from termcolor import colored
 from colorama import Fore, Back, Style
 import sys
-from flask import Flask, jsonify
-import pickle
-import numpy as np
-from flask import Flask, request
+from flask import Flask, jsonify, request
 import argparse
-
 import datetime
-
 import time
 ts=datetime.datetime.now()
-# In[7]:
+
 
 sequence_index = []
 def preprocess(args):
