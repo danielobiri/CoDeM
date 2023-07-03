@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 
-
-
-
 from Bio import SeqIO
 from nltk import trigrams
 import tensorflow as tf
@@ -15,12 +12,10 @@ import random
 random.seed(12345)
 import os
 os.environ['PYTHONHASHSEED']='0'
-from colorama import Fore, Back, Style
 import sys
 from flask import Flask, jsonify, request
 import argparse
 import datetime
-import time
 ts=datetime.datetime.now()
 
 
